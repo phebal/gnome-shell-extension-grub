@@ -55,7 +55,7 @@ const GrubMenu = new Lang.Class({
     _init: function () {
         this.parent(0.0, _("Grub Boot Menu"));
         let hbox = new St.BoxLayout({ style_class: 'panel-status-menu-box' });
-        let icon = new St.Icon({ icon_name: 'system-restart',
+        let icon = new St.Icon({ icon_name: 'view-refresh',
                              style_class: 'system-status-icon' });
         this.actor.add_actor(icon);
         this._sections = {};

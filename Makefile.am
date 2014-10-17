@@ -48,7 +48,7 @@ CLEANFILES = data/metadata.json \
 clean-local:
 	-rm -rf $(builddir)/dist
 
-gtk_update_icon_cache = gtk-update-icon-cache -f -t $(datadir)/icons/hicolor; gtk-update-icon-cache -f -t 
+gtk_update_icon_cache = gtk-update-icon-cache -f -t $(datadir)/icons/hicolor
 
 zip-file: all
 	@echo 'creating zip distribution file'

@@ -1,5 +1,8 @@
-Execute the following commands to create and install your package.
+If you're starting from scratch (instead of a tarball,) run:
+autoreconf --install --force
+intltoolize --force
 
+Execute the following commands to create and install your package.
 ./configure --prefix=/usr
 make
 sudo make install

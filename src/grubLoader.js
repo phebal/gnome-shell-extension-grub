@@ -37,7 +37,7 @@ const GrubLoader = new Lang.Class({
         let entries = [];
 
         data = String(data);
-        let mEntryRegex = /^\s*menuentry\s+\'(.*?)\'/gm;
+        let mEntryRegex = /^menuentry\s+\'(.*?)\'/gm;
         let matchArray;
         while ((matchArray = mEntryRegex.exec(data)) !== null) {
             let eName = matchArray[1];
@@ -53,7 +53,7 @@ const GrubLoader = new Lang.Class({
     _findIcon: function (entryName) {
         let regExpMap = {
             'fedora':   [/fedora/i],
-            'windows8': [/windows\s*8/i],
+            'windows8': [/windows/i],
             'debian': [/debian/i]
         };
 
